@@ -1,4 +1,5 @@
 // импортируем RestAssured
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 // импортируем Before
 import org.junit.Before;
@@ -19,6 +20,7 @@ public class FirstApiTest {
 
   // создаём метод автотеста
   @Test
+  @DisplayName("getMyInfoStatusCode Test")
   public void getMyInfoStatusCode() {
     // метод given() помогает сформировать запрос
     given()
